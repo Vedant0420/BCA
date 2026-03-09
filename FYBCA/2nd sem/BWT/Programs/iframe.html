@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slower Animated Spiral</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+    }
+    canvas {
+      display: block;
+      margin: auto;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+<canvas id="spiralCanvas" width="800" height="800"></canvas>
+<script>
+  const canvas = document.getElementById("spiralCanvas");
+  const ctx = canvas.getContext("2d");
+
+  ctx.strokeStyle = "white";
+  ctx.lineWidth = 1;
+
+  let a = 0;
+  let b = 0;
+
+  let x = canvas.width / 2;
+  let y = 200;
+
+  let angle = 0;
+
+  ctx.beginPath();
+  ctx.moveTo(x, y);
+
+  function drawStep() {
+    if (b >= 210) {
+      ctx.stroke();
+      return;
+    }
+
+    let newX = x + a * Math.cos(angle * Math.PI / 180);
+    let newY = y + a * Math.sin(angle * Math.PI / 180);
+
+    ctx.lineTo(newX, newY);
+    ctx.stroke();
+
+    x = newX;
+    y = newY;
+    angle += b;
+    a += 3;
+    b += 1;
+
+    setTimeout(drawStep, 10);
+  }
+
+  drawStep();
+</script>
+</body>
+</html>

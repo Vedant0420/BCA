@@ -1,0 +1,36 @@
+body{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s);
+    background-repeat:no-repeat; /* this makes sure the color doesn't repeat*/
+    background-attachment: fixed; /* this makes sure the color is on the whole page*/
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+
+    background: radial-gradient(skyblue,white);
+    background-repeat:no-repeat; 
+    background-attachment: fixed;
+    border-radius: 20px;
+    padding:5px;
+    text-decoration: underline;
+}
+p{
+    background: linear-gradient(to left,skyblue,white);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    border-radius: 20px;
+    padding:5px;
+}
+h2{
+    color:white;
+    background: conic-gradient(red,blue,yellow,green,orange)
+
+}
+.box{
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(red,blue,yellow,green,orange);
+    border-radius: 100px;
+}
