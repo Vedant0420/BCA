@@ -37,7 +37,7 @@ int main(){
             cout << "Area of Circle: " << area(radius) << endl;
             break;
         }
-        case 2: {
+        case 2: 
             int length, breadth;
             cout << "Enter length and breadth of the rectangle: ";
             cin >> length >> breadth;

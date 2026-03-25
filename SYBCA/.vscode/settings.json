@@ -1,0 +1,13 @@
+{
+    "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\g++.exe",
+    "c-cpp-compile-run.c-compiler": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+    "c-cpp-compile-run.c-flags": "-Wall -Wextra -g3",
+    "c-cpp-compile-run.c-linker-flags": "",
+    "c-cpp-compile-run.cpp-compiler": "C:\\msys64\\mingw64\\bin\\g++.exe",
+    "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -g3",
+    "c-cpp-compile-run.cpp-linker-flags": "",
+    "c-cpp-compile-run.output-location": "C:/Temp/cpptest",
+    "c-cpp-compile-run.mirror-output-location": false,
+    "c-cpp-compile-run.run-in-external-terminal": false,
+    "c-cpp-compile-run.save-before-compile": true
+}

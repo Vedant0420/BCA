@@ -1,18 +1,26 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "(MSVC) Launch", // Name of your debug configuration
-            "type": "cppvsdbg",     // Debugger type for Visual Studio
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/a.exe", // Path to your compiled executable
+            "program": "C:/Temp/cpptest/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "environment": [],
-            "console": "externalTerminal", // or "integratedTerminal"
-            "preLaunchTask": "C/C++: cl.exe build active file" // This task will build your code before debugging
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+            "preLaunchTask": "C/C++: g++.exe build active file (cpptest)",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
         }
     ]
 }
