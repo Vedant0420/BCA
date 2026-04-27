@@ -1,0 +1,18 @@
+p {
+    color: red;
+    font-size: 16px;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#myID {
+    color: green;
+    font-size: 18px;
+}
+
+function function_name (parameters) {
+    // code to be executed
+    return value;
+}

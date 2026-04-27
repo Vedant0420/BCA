@@ -61,7 +61,7 @@ using namespace std;
 class student {
 public:
     int rno, age;
-    static string name;
+    static string name; 
     void display();
  
 } ;
