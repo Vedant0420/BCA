@@ -9,5 +9,9 @@
     "c-cpp-compile-run.output-location": "C:/Temp/cpptest",
     "c-cpp-compile-run.mirror-output-location": false,
     "c-cpp-compile-run.run-in-external-terminal": false,
-    "c-cpp-compile-run.save-before-compile": true
+    "c-cpp-compile-run.save-before-compile": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.automationProfile.windows": {
+        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
 }
