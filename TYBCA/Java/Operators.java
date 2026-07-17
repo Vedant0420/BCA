@@ -40,17 +40,40 @@
 // }
 
 
+// import java.io.*;
+// class relationaloperator
+// {
+//     public static void main(String[] args)
+//     {
+//         int a = 10, b = 20;
+//         System.out.println("a is greater than b: " + (a > b));
+//         System.out.println("a is less than b: " + (a < b));
+//         System.out.println("a is equal to b: " + (a == b));
+//         System.out.println("a is not equal to b: " + (a != b));
+//         System.out.println("a is greater than or equal to b: " + (a >= b));
+//         System.out.println("a is less than or equal to b: " + (a <= b));
+//     }
+// }
+
+// import java.io.*;
+// class logicaloperator
+// {
+//     public static void main(String[] args)
+//     {
+//         int a = 10, b = 20;
+//         System.out.println("a is greater than b and a is less than b: " + (a > b && a < b));
+//         System.out.println("a is greater than b or a is less than b: " + (a > b || a < b));
+//         System.out.println("not a is greater than b: " + !(a > b));
+//     }
+// }
+
 import java.io.*;
-class relationaloperator
+ class Ternaryoperator
 {
     public static void main(String[] args)
     {
-        int a = 10, b = 20;
-        System.out.println("a is greater than b: " + (a > b));
-        System.out.println("a is less than b: " + (a < b));
-        System.out.println("a is equal to b: " + (a == b));
-        System.out.println("a is not equal to b: " + (a != b));
-        System.out.println("a is greater than or equal to b: " + (a >= b));
-        System.out.println("a is less than or equal to b: " + (a <= b));
+        int a = 20, b = 40, c=30, result;
+        result = (a>b) ? (a > c) ? a : c : (b > c) ? b : c;
+        System.out.println("The largest number is: " + result);
     }
 }
