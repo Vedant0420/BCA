@@ -67,13 +67,31 @@
 //     }
 // }
 
+// import java.io.*;
+//  class Ternaryoperator
+// {
+//     public static void main(String[] args)
+//     {
+//         int a = 20, b = 40, c=30, result;
+//         result = (a>b) ? (a > c) ? a : c : (b > c) ? b : c; 
+//         System.out.println("The largest number is: " + result);
+//     }
+// }
+
 import java.io.*;
- class Ternaryoperator
+class bitwiseoperator
 {
     public static void main(String[] args)
     {
-        int a = 20, b = 40, c=30, result;
-        result = (a>b) ? (a > c) ? a : c : (b > c) ? b : c;
-        System.out.println("The largest number is: " + result);
+   int d = 0b1010; // 10 in decimal
+   int e = 0b1100; // 12 in decimal
+
+        System.out.println("Bitwise AND of d and e is: " + (d & e));
+        System.out.println("Bitwise OR of d and e is: " + (d | e));
+        System.out.println("Bitwise XOR of d and e is: " + (d ^ e));
+        System.out.println("Bitwise NOT of d is: " + (~d));
+        System.out.println("Left shift (d << 2) result: " + (d << 2));
+        System.out.println("Right shift (e >> 2) result: " + (e >> 2));
+        System.out.println("Unsigned right shift (e >>> 1) result: " + (e >>> 1));
     }
 }
