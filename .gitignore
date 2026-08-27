@@ -1,0 +1,23 @@
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Microsoft Office temp/lock files
+~$*
+
+# Java compiled files
+*.class
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
