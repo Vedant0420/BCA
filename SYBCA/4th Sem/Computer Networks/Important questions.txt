@@ -1,2 +1,0 @@
-Q1. Comparison of OSI and TCP/IP model
- 
